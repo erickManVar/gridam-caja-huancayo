@@ -1,0 +1,167 @@
+/* Responsive Styles for Gridam Tech Clone */
+
+/* Large Devices (Desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-content h1 {
+        font-size: 50px;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium Devices (Tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-content h1 {
+        font-size: 40px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contact-wrap {
+        flex-direction: column;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    /* Mobile Menu */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: var(--primary-color);
+        padding: 80px 30px 30px;
+        transition: all 0.4s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .main-menu {
+        flex-direction: column;
+    }
+    
+    .main-menu li {
+        margin: 0 0 15px;
+    }
+    
+    .sub-menu {
+        position: static;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.05);
+        box-shadow: none;
+        padding: 10px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+    }
+    
+    .sub-menu li a {
+        color: var(--light-color);
+    }
+    
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 24px;
+        color: var(--light-color);
+        cursor: pointer;
+    }
+    
+    .menu-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        color: var(--light-color);
+        cursor: pointer;
+    }
+}
+
+/* Small Devices (Landscape Phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .section-heading h2 {
+        font-size: 36px;
+    }
+    
+    .about-text h2 {
+        font-size: 36px;
+    }
+    
+    .about-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info h2 {
+        font-size: 36px;
+    }
+}
+
+/* Extra Small Devices (Portrait Phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .hero-content h1 {
+        font-size: 30px;
+    }
+    
+    .hero-buttons .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .section-heading h2 {
+        font-size: 30px;
+    }
+    
+    .about-text h2 {
+        font-size: 30px;
+    }
+    
+    .footer-widgets {
+        grid-template-columns: 1fr;
+    }
+}
